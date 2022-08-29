@@ -1,6 +1,9 @@
 public interface Messages {
     String WELLCOMEMESSAGE = "======Wellcome to Logistic&Co=====";
     String MENU = "1. Create sender" +'\n' + "2. Create container" + '\n' + "3. Load Container on Ship" + '\n' + "Exit";
+    String WRONGFORMAT = "Wrong format, please enter int";
+    String APPRECIATE = "Thank You for using our App";
+    String SEPARATOR = "==================================";
     String MESSAGE1 = "Provide name in String format: ";
     String MESSAGE2 = "Provide surname in String format: ";
     String MESSAGE3 = "Provide ID number in int format\n(remember it consist of 9 digits): ";
@@ -15,10 +18,6 @@ public interface Messages {
     String MESSAGE12 = "Should we send container to warehouse?";
     String MESSAGE13 = "No such type of decision is found";
     String MESSAGE14 = "\tPlease select Your choice \n\t(1 or 2,\"Exit\" to quit)";
-
     String MESSAGE15 = "===You are creating new sender===";
     String MESSAGE16 = "==You are creating new container==";
-    String WRONGFORMAT = "Wrong format, please enter int";
-    String APPRECIATE = "Thank You for using our App";
-    String SEPARATOR = "==================================";
 }
