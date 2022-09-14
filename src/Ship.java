@@ -13,21 +13,8 @@ public class Ship implements Messages {
         this.destinationPort = destinationPort;
     }
 
-
     public int getMaxAmountContainers() {
         return maxAmountContainers;
-    }
-
-    public void setMaxAmountContainers(int maxAmountContainers) {
-        this.maxAmountContainers = maxAmountContainers;
-    }
-
-    public ArrayList<Container> getContainers() {
-        return containers;
-    }
-
-    public void setContainers(ArrayList<Container> containers) {
-        this.containers = containers;
     }
 
     public boolean isFreeSpace() {

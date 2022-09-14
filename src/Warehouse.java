@@ -20,6 +20,7 @@ public class Warehouse implements Messages{
             return true;
         }
     }
+
     public void loadContainer(Container container){
         if (isEmpty()){
             containers.add(container);
@@ -27,8 +28,6 @@ public class Warehouse implements Messages{
             System.out.println(MESSAGE4);
         }
     }
-
-
 
     @Override
     public String toString() {

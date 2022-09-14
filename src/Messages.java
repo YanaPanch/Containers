@@ -2,6 +2,7 @@ public interface Messages {
     String WELLCOMEMESSAGE = "======Wellcome to Logistic&Co=====";
     String MENU = "1. Create sender" +'\n' + "2. Create container" + '\n' + "3. Load Container on Ship" + '\n' + "Exit";
     String WRONGFORMAT = "Wrong format, please enter int";
+    String WRONGDATA = "You provided wrong data format\nMenu will be opened again for You";
     String APPRECIATE = "Thank You for using our App";
     String SEPARATOR = "==================================";
     String MESSAGE1 = "Provide name in String format: ";
@@ -17,7 +18,7 @@ public interface Messages {
     String MESSAGE11 = "Select variety of container You \nwant to create (1 or 2)";
     String MESSAGE12 = "Should we send container to warehouse?";
     String MESSAGE13 = "No such type of decision is found";
-    String MESSAGE14 = "\tPlease select Your choice \n\t(1 or 2,\"Exit\" to quit)";
+    String MESSAGE14 = "\tPlease select Your choice \n\t(1, 2 or 3,\"Exit\" to quit)";
     String MESSAGE15 = "===You are creating new sender===";
     String MESSAGE16 = "==You are creating new container==";
 }

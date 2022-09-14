@@ -41,17 +41,25 @@ public class Program implements Messages, InputData, SaveData {
     }
 
     public Sender createSender() {
+
         System.out.println(MESSAGE15 + '\n' + MESSAGE1);
         String name = scanner.nextLine();
         System.out.println(MESSAGE2);
         String surname = scanner.nextLine();
         System.out.println(MESSAGE3);
+        int personalIdNumberLength = 9;
         String personalIdNumber = scanner.nextLine();
-
-        Sender sender = new Sender(name, surname, personalIdNumber);
-        senders.add(sender);
-        saveData("sender.txt", senders);
-        System.out.println(SEPARATOR);
+        Sender sender = null;
+        if (personalIdNumber.length() != personalIdNumberLength){
+            System.out.println(SEPARATOR);
+            System.out.println(WRONGDATA);
+            System.out.println(SEPARATOR);
+        } else {
+            sender = new Sender(name, surname, personalIdNumber);
+            senders.add(sender);
+            saveData("sender.txt", senders);
+            System.out.println(SEPARATOR);
+        }
         choiceSet();
 
         return sender;
